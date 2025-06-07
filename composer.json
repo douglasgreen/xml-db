@@ -39,13 +39,14 @@
         }
     ],
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.2"
     },
     "require-dev": {
         "douglasgreen/config-setup": "dev-main",
-        "phpstan/phpstan": "^1.11.9",
-        "rector/rector": "^1.2.2",
-        "symplify/easy-coding-standard": "^12.3.4"
+        "phpstan/phpstan": "^2.1",
+        "rector/rector": "^2.0",
+        "shipmonk/name-collision-detector": "^2.1",
+        "symplify/easy-coding-standard": "^12.5"
     },
     "autoload": {
         "psr-4": {
@@ -65,6 +66,7 @@
     },
     "scripts": {
         "lint": [
+            "detect-collisions",
             "ecs",
             "phpstan analyse",
             "rector --dry-run"
@@ -73,7 +75,7 @@
             "ecs --fix",
             "rector"
         ],
-        "post-install-cmd": "config-setup",
-        "post-update-cmd": "config-setup"
+        "post-install-cmd": "config_setup.php",
+        "post-update-cmd": "config_setup.php"
     }
 }
