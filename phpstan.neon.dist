@@ -1,0 +1,36 @@
+parameters:
+  level: 8
+  paths:
+    - src
+    - tests
+  excludePaths:
+    - var
+    - vendor
+  
+  # Strict analysis settings
+  checkUninitializedProperties: true
+  checkExplicitMixed: true
+  reportMaybes: true
+  checkBenevolentUnionTypes: true
+  rememberPossiblyImpureFunctionValues: false
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
+  
+  # Bleeding edge for latest features
+  bleedingEdge:
+    alwaysTrueAlwaysReported: true
+    strictUnions: true
+  
+  # Framework extensions (uncomment as needed)
+  # symfony:
+  #   container_xml_path: var/cache/dev/App_KernelDevDebugContainer.xml
+  
+  # Doctrine extension (uncomment as needed)
+  # doctrine:
+  #   objectManagerLoader: tests/object-manager.php
+
+includes:
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
+  - vendor/shipmonk/dead-code-detector/rules.neon
+
+

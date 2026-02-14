@@ -1,0 +1,9 @@
+{
+    "scanPaths": [
+        "src"
+    ],
+    "fileExtensions": [
+        "php"
+    ],
+    "ignoreParseFailures": true
+}
