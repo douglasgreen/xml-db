@@ -295,7 +295,7 @@ In addition to UUID and UUHN, consider making a Tags table with unique-named tag
 table where each piece of content can have one or more tags. Or is this redundant to "tag
 documents"?
 
-## Criticism of database
+## Criticism of typical database operations
 
 -   Everything is a special case (data is not uniform).
 -   You have to define data in order to store it (no separation of concerns).
