@@ -1,18 +1,16 @@
 {
-  "_version": "1.1.0",
-  "_modified": "2026-02-22",
+  "modified": "2026-02-26",
   "name": "douglasgreen/content",
   "version": "1.0.0",
   "description": "XML content abstraction layer",
   "type": "module",
   "scripts": {
     "lint": "npm run lint:md",
-    "lint:md": "markdownlint \"**/*.md\"",
-    "format": "prettier --write ."
+    "lint:md": "markdownlint '**/*.md'",
+    "format": "prettier --write . && markdownlint '**/*.md' --fix"
   },
   "devDependencies": {
     "markdownlint-cli": "^0.47.0",
-    "prettier": "^3.8.1",
-    "prettier-plugin-sql": "^0.19.2"
+    "prettier": "^3.8.1"
   }
 }

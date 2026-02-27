@@ -1,5 +1,4 @@
-# version: 1.1.0
-# modified: 2026-02-25
+# modified: 2026-02-26
 
 # This file ignores build directories and project tool directories.
 # Remove composer.lock and package-lock.json for project type, leave in library type.
@@ -46,6 +45,6 @@ __pycache__/
 *.pyo
 
 # Symfony
-/.env.local.php
+.env.local.php
 parameters.yml
-/var/
+var/
